@@ -90,10 +90,15 @@ User can view all his claim transactions once enter this page
 - ***'View Change Log' button***: View change log of the claim
 
 ## Team Claim (Manager only)
-Manager can view all claim transactions of his team once enter this page
+Manager Types: (refer [Manager Authority Settings](payroll-setup.md#manager-authority-settings))
+
+1. **Approval Manager:** Can approve employee claim
+
+2. **Verify Manager:** Cannot approve employee claim
 
 ![team-claim](../../../../static/img/integration/hrms/e-claim/team-claim.png)
 
+- Manager can view all claim transactions of his team once enter this page
 - Manager can apply filter and sorting order to view different claim transaction listing:
     - Filtering options:
         - Expenses type

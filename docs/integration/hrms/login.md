@@ -12,7 +12,11 @@ description: A login guide for SQL HRMS
 
 **Step 2:** Enter OTP sent to your email | Login  
     
-    ![login2](../../../static/img/integration/hrms/login/login2.png)
+    ![login2](../../../static/img/integration/hrms/login/login2.png)  
+
+**Step 3:** Select a company  
+
+    ![login3](../../../static/img/integration/hrms/login/login3.png)  
 
 ## Try Live Demo
 

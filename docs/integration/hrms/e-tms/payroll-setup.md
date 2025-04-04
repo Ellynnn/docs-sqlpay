@@ -4,6 +4,14 @@ title: Payroll Setup
 description: An E TMS setup guide in SQL Payroll
 ---
 
+## Time Zone
+
+**Step 1:** Company Profile | General | Time Zone | Select your country time zone
+
+    ![maintain-timezone](../../../../static/img/integration/hrms/e-tms/maintain-timezone.png)
+
+**Step 2:** Save
+
 ## Maintain Branch
 
 **Step 1:** Human Resource | Maintain Branch… | Select a Branch / Create New  
@@ -58,15 +66,32 @@ Option 2: Click on ***'P' button*** | Select date
 **Step 3:** Enter Break Time
 - May add up to 3 break times
 
-**Step 4:** Select Rules  
+**Step 4:** Select Clock Methods
+- ***'GPS' checkbox:*** Requires to get employee's location when clock in / out in SQL HRMS app
+- ***'QR' checkbox:*** Requires to scan QR code from SQL HRMS app on SQL Clock In Manager app
+
+:::info
+If both clock methods are checked, SQL HRMS will detect employee's location first only generate QR code to proceed clock in / out process. However, if none of the clock methods are checked, the clock in / out button in SQL HRMS app will be disabled 
+:::
+
+**Step 5:** Select Rules  
 - ***'Clock In / Clock Out' checkbox:*** Requires to clock in / out in SQL HRMS app
-- ***'GPS Monitoring' checkbox:*** Post status update if employee left work location
+- ***'GPS Monitoring' checkbox:*** Post status update if employee left work location 
 - ***'Site Photo' checkbox:*** Requires to take photo before clock in / out (User cannot upload picture from album)
 
-**Step 5:** Save
+:::info
+- ***'GPS Monitoring' checkbox*** will disabled is ***'GPS' checkbox*** is unchecked
+- ***'Site Photo' checkbox*** will disabled is ***'QR' checkbox*** is unchecked
+:::
+
+**Step 6:** Save
 
 **Optional**
 - User may select ***'Leave Rules'*** if applicable
+
+:::info
+Make sure that the work session is set based on the time zone maintained in Company Profile (refer [here](#time-zone))
+:::
 
 ## Maintain Work OT
 
@@ -141,7 +166,7 @@ For Custom Rule, may contact SQL Support for customization
 - User may click on ***'R' button*** or ***'W' button*** | Select date from calendar
 - ***'C' button*** to clear Work Session / Rest Day
     - Alternatively, user may use ***'Clear All' button*** to clear all Rest Day and Work Session within the date range
-- User cannot assign work sessions or change work sessions on past dates  
+- User cannot assign work sessions or change work sessions on dates before summary last processed date  
 
 ### Wizard  
 
@@ -182,7 +207,7 @@ For Custom Rule, may contact SQL Support for customization
 **Step 5:** Process  
 
 :::warning
-User cannot assign work sessions or change work sessions on past dates
+User cannot assign work sessions or change work sessions on dates before summary last processed date
 :::
 
 ### Copy Calendar from Employee
@@ -195,7 +220,7 @@ User cannot assign work sessions or change work sessions on past dates
 **Explanation:** Copy Employee 00005 schedule (Work Session and Rest Day) from 20/5/2024 to 31/12/2024 to Employee 00006  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to copy)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to copy)
 :::
 
 ### Clear All Schedule
@@ -208,7 +233,7 @@ Date From need to be current date to future dates (past dates are not allowed to
 **Explanation:** Delete all schedule (Work Session and Rest Day) of Employee 00006 from 20/5/2024 to 31/12/2024  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to delete)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to delete)
 :::
 
 ## Maintain Traveller Location

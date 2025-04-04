@@ -10,7 +10,7 @@ description: An E Payroll setup guide in SQL Payroll
 **Step 2:** Enter Title and Remark
 - Remark is optional and visible in maintenance view only
   
-**Step 3:** Select a Category and Date for when the Announcement will be visible to the employees  
+**Step 3:** Select a Category and Date for the duration the Announcement will be visible to the employees  
   
   ![maintain-announcement1](../../../../static/img/integration/hrms/e-payroll/maintain-announcement1.png)
 

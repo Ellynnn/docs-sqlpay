@@ -80,11 +80,11 @@ User can view his team members’ general personal information
 
 ### Announcement
 
-User can view his company announcement  
+User can view their company's announcement  
     
     ![announcement1](../../../../static/img/integration/hrms/e-payroll/announcement1.png)
 
-- Announcements will be visible for 3 months
+- Announcements will be visible according to the duration set in [SQL Payroll](payroll-setup.md#maintain-announcement)
 - Employee will be notified if there are new announcements from today to future dates
 - Time of Announcement Notification:
   - If post date is today, the employee will be notified almost immediately
@@ -123,7 +123,7 @@ User can switch to different company which are linked to the login email
     ![help-center](../../../../static/img/integration/hrms/e-payroll/help-center.png)
 
 - **Rate Us:** User will be directed to Play Store (Android) / App Store (iOS) to rate SQL HRMS
-- **About SQL HRMS:** User will be directed to [SQL HRMS documentation](https://docs.sql.com.my/sqlpay/category/hrms/) where user can learn more about SQL HRMS features
+- **About SQL HRMS:** User will be directed to [SQL HRMS documentation](https://docs.sql.com.my/sqlpay/category/sql-hrms) where user can learn more about SQL HRMS features
 - **Help Videos:** User will be directed to [SQL HRMS playlists](https://www.youtube.com/playlist?list=PLBfrhZPWZd1Vxv3lYf174a3EW7Pdw8Cth) on YouTube where user can learn more about SQL HRMS features
 - **SQL Privacy Policy:** User will be directed to [SQL Privacy Policy](https://www.sql.com.my/pdpa/) where user can learn how their information is used without violating user's privacy 
 

@@ -141,7 +141,7 @@ For Custom Rule, may contact SQL Support for customization
 - User may click on ***'R' button*** or ***'W' button*** | Select date from calendar
 - ***'C' button*** to clear Work Session / Rest Day
     - Alternatively, user may use ***'Clear All' button*** to clear all Rest Day and Work Session within the date range
-- User cannot assign work sessions or change work sessions on past dates  
+- User cannot assign work sessions or change work sessions on dates before summary last processed date  
 
 ### Wizard  
 
@@ -182,7 +182,7 @@ For Custom Rule, may contact SQL Support for customization
 **Step 5:** Process  
 
 :::warning
-User cannot assign work sessions or change work sessions on past dates
+User cannot assign work sessions or change work sessions on dates before summary last processed date
 :::
 
 ### Copy Calendar from Employee
@@ -195,7 +195,7 @@ User cannot assign work sessions or change work sessions on past dates
 **Explanation:** Copy Employee 00005 schedule (Work Session and Rest Day) from 20/5/2024 to 31/12/2024 to Employee 00006  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to copy)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to copy)
 :::
 
 ### Clear All Schedule
@@ -208,7 +208,7 @@ Date From need to be current date to future dates (past dates are not allowed to
 **Explanation:** Delete all schedule (Work Session and Rest Day) of Employee 00006 from 20/5/2024 to 31/12/2024  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to delete)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to delete)
 :::
 
 ## Maintain Traveller Location

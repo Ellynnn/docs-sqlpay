@@ -206,7 +206,7 @@ The notification will appear after employee clocked in and has ***'GPS Monitorin
     
     ![reminder1](../../../../static/img/integration/hrms/e-tms/reminder1.png)
 
-2. Remind employee to clock out when he leaves his work location  
+2. Remind employee to clock out it's work end  
     
     ![reminder2](../../../../static/img/integration/hrms/e-tms/reminder2.png)
 

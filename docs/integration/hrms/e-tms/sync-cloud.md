@@ -15,14 +15,12 @@ description: An E TMS sync cloud guide in SQL Payroll
 :::info
 The **'ETMS updated to dd/mm/yyyy'** is the date of the latest TMS summary processed. Any attendance logs before the updated date will no longer allowed to be adjusted from SQL HRMS app.
 
-If user sync before 9am, Time Attendance Log will only sync up to two days before.  
-    
-    ![sync-cloud2](../../../../static/img/integration/hrms/e-tms/sync-cloud2.png)  
+The **Log synced to dd/mm/yyyy hh:nn** is the date time SQL Payroll will sync attendance log to. Any attendance logs before this time (due to manager clock on behalf) will no longer be synced to SQL Payroll
 
-| **Scenario** | **Sync Up To** | **Days Before** |
-| :----------- | :------------- | :-------------- |  
-| Before 9am on 31/05/2024 | 29/05/2024 | 2 days |  
-| After 9am on 31/05/2024 | 30/05/2024 | 1 day |  
+| **Scenario** | **Sync Up To** |
+| :----------- | :------------- | 
+| Before 9am on 24/09/2025 | 23/09/2025 23:59 |  
+| After 9am on 24/09/2025 | 24/09/2025 08:59 |
 :::
 
 ### Attendance Log Error
@@ -31,7 +29,8 @@ This dialog box will only prompt if there are any incomplete log pairs (missing 
     
     ![log-error](../../../../static/img/integration/hrms/e-tms/log-error.png)  
 
-- **Purple cells:** Missing time which needs to be filled in 
+- The logs are grouped by the date and employee with alternating **green** and **white** highlights
+- **Green cells:** Missing time which needs to be filled in 
 - Editable columns:
     - Clock In
     - Clock Out

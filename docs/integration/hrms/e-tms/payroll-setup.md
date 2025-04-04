@@ -4,6 +4,14 @@ title: Payroll Setup
 description: An E TMS setup guide in SQL Payroll
 ---
 
+## Time Zone
+
+**Step 1:** Company Profile | General | Time Zone | Select your country time zone
+
+    ![maintain-timezone](../../../../static/img/integration/hrms/e-tms/maintain-timezone.png)
+
+**Step 2:** Save
+
 ## Maintain Branch
 
 **Step 1:** Human Resource | Maintain Branch… | Select a Branch / Create New  
@@ -67,6 +75,10 @@ Option 2: Click on ***'P' button*** | Select date
 
 **Optional**
 - User may select ***'Leave Rules'*** if applicable
+
+:::info
+Make sure that the work session is set based on the time zone maintained in Company Profile (refer [here](#time-zone))
+:::
 
 ## Maintain Work OT
 
@@ -141,7 +153,7 @@ For Custom Rule, may contact SQL Support for customization
 - User may click on ***'R' button*** or ***'W' button*** | Select date from calendar
 - ***'C' button*** to clear Work Session / Rest Day
     - Alternatively, user may use ***'Clear All' button*** to clear all Rest Day and Work Session within the date range
-- User cannot assign work sessions or change work sessions on past dates  
+- User cannot assign work sessions or change work sessions on dates before summary last processed date  
 
 ### Wizard  
 
@@ -182,7 +194,7 @@ For Custom Rule, may contact SQL Support for customization
 **Step 5:** Process  
 
 :::warning
-User cannot assign work sessions or change work sessions on past dates
+User cannot assign work sessions or change work sessions on dates before summary last processed date
 :::
 
 ### Copy Calendar from Employee
@@ -195,7 +207,7 @@ User cannot assign work sessions or change work sessions on past dates
 **Explanation:** Copy Employee 00005 schedule (Work Session and Rest Day) from 20/5/2024 to 31/12/2024 to Employee 00006  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to copy)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to copy)
 :::
 
 ### Clear All Schedule
@@ -208,7 +220,7 @@ Date From need to be current date to future dates (past dates are not allowed to
 **Explanation:** Delete all schedule (Work Session and Rest Day) of Employee 00006 from 20/5/2024 to 31/12/2024  
 
 :::info
-Date From need to be current date to future dates (past dates are not allowed to delete)
+Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to delete)
 :::
 
 ## Maintain Traveller Location

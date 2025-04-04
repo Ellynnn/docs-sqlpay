@@ -24,7 +24,6 @@ Modules that require this permission:
 ![android-location3](../../../static/img/integration/hrms/permission/android-location3.png)
 
 **From Device Settings**  
-User can manually allow the permission through device settings page  
 
 **Step:** App Info | App permissions | Location  
 
@@ -46,9 +45,26 @@ User can manually allow the permission through device settings page
 ![ios-location3](../../../static/img/integration/hrms/permission/ios-location3.png)
 
 **From Device Settings**  
+
 **Step:** Settings | Search 'SQL HRMS' | Location  
 
 ![ios-location4](../../../static/img/integration/hrms/permission/ios-location4.png)
+
+**Content & Privacy Restrictions**  
+
+**Step 1:** Settings | Screen Time | Content & Privacy Restrictions  
+
+![ios-location5](../../../static/img/integration/hrms/permission/ios-location5.png)
+
+:::info
+If you have disabled this feature previously, you can skip all of the following steps
+:::
+
+**Step 2:** Enter your Screen Time Password if you have previously set one  
+
+**Step 3:** Search 'Location Services' | Select ***'Allow Changes'*** and enable the ***'Location Services'*** toggle 
+
+![ios-location6](../../../static/img/integration/hrms/permission/ios-location6.png)  
 
 ## Notification
 

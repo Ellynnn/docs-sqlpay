@@ -12,11 +12,13 @@ Enable **Autostart** for SQL HRMS to ensure E TMS features work accordingly (ref
 
     ![dashboard](../../../../static/img/integration/hrms/e-tms/dashboard.png)  
 
-- **Upcoming Holiday:** User's upcoming public holidays
 - **Session Card:** User's work session shift time
-    - User can tap on the card to direct to Work Session Calendar
+    - It shows user's first Clock In and last Clock Out of the day with an estimated calculation of late in and early out
+    - User can tap on the card to direct to User's Attendance Log
     - User can tap on the ***'Clock In' button*** to direct to Clock In / Clock Out page
-        - If no work session is assigned, the button will be disabled
+        - If no work session is assigned, the button will be disabled  
+- **Upcoming Holiday:** User's upcoming public holidays
+
 
 ## Clock In / Clock Out
 
@@ -206,7 +208,7 @@ The notification will appear after employee clocked in and has ***'GPS Monitorin
     
     ![reminder1](../../../../static/img/integration/hrms/e-tms/reminder1.png)
 
-2. Remind employee to clock out when he leaves his work location  
+2. Remind employee to clock out it's work end  
     
     ![reminder2](../../../../static/img/integration/hrms/e-tms/reminder2.png)
 

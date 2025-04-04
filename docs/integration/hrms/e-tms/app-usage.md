@@ -12,23 +12,29 @@ Enable **Autostart** for SQL HRMS to ensure E TMS features work accordingly (ref
 
     ![dashboard](../../../../static/img/integration/hrms/e-tms/dashboard.png)  
 
-- **Upcoming Holiday:** User's upcoming public holidays
 - **Session Card:** User's work session shift time
-    - User can tap on the card to direct to Work Session Calendar
+    - It shows user's first Clock In and last Clock Out of the day with an estimated calculation of late in and early out
+    - User can tap on the card to direct to User's Attendance Log
     - User can tap on the ***'Clock In' button*** to direct to Clock In / Clock Out page
-        - If no work session is assigned, the button will be disabled
+        - If no work session is assigned, the button will be disabled  
+- **Upcoming Holiday:** User's upcoming public holidays
+
 
 ## Clock In / Clock Out
+
+| **Button** | **Explanation** |
+| :--------- | :-------------- |
+| ![clock-button1](../../../../static/img/integration/hrms/e-tms/clock-button1.png) | SQL HRMS app's location service is unable to start. This may due to the following reasons: <br/><br/> 1. User's device GPS is not enabled <br/> 2. The required location permission is not allowed <br/><br/> Refer [Location Service and Permission](../permission.md#location)|  
+| ![clock-button2](../../../../static/img/integration/hrms/e-tms/clock-button2.png) | SQL HRMS app is trying to get user's current location | 
+| ![clock-button3](../../../../static/img/integration/hrms/e-tms/clock-button3.png) | User is not within work location. However, if user is really within their work location, SQL HRMS app will continuously try to get a more accurate position so that user will be able to Clock In / Clock Out | 
+| ![clock-button4](../../../../static/img/integration/hrms/e-tms/clock-button4.png) | User is within work location and is allowed to Clock In | 
+| ![clock-button5](../../../../static/img/integration/hrms/e-tms/clock-button5.png) | User is within work location and is allowed to Clock Out | 
 
 **Clock In**  
     
     ![clock-in1](../../../../static/img/integration/hrms/e-tms/clock-in1.png)  
 
-- User who is a traveller will show a **'Traveller'** with green check
-- **'Location Matched' / 'Location Unmatched'** will only visible for: 
-    - Normal employee (not traveller)
-    - Traveller that is only allowed to clock in / out at specific places (assigned Work Location)
-- The button will only enabled if the user turns on their Location Service (refer [Android Permission](../permission.md#android) and [iOS Permission](../permission.md#ios)) and their location is within their designated work location(s)
+- User who is a traveller will show a **'Traveller'** with green check  
 
 :::info
 If user forget to clock out, after a certain period of time, the app will reset the time tracking  
@@ -181,9 +187,15 @@ Managers are allowed to clock in on behalf for his team by tapping on the ***'Cl
     
     ![clock-on-behalf2](../../../../static/img/integration/hrms/e-tms/clock-on-behalf2.png)  
 
+| **Button** | **Explanation** |
+| :--------- | :-------------- |
+| ![clock-button1](../../../../static/img/integration/hrms/e-tms/clock-button1.png) | SQL HRMS app's location service is unable to start. This may due to the following reasons: <br/><br/> 1. User's device GPS is not enabled <br/> 2. The required location permission is not allowed <br/><br/> Refer [Location Service and Permission](../permission.md#location)|  
+| ![clock-button2](../../../../static/img/integration/hrms/e-tms/clock-button2.png) | SQL HRMS app is trying to get user's current location | 
+| ![clock-button4](../../../../static/img/integration/hrms/e-tms/clock-button4.png) | User's location is detected and is allowed to Clock In | 
+| ![clock-button5](../../../../static/img/integration/hrms/e-tms/clock-button5.png) | User's location is detected and is allowed to Clock Out | 
+
 - Manager's location will be captured when help to clock on behalf
-- ***'Clock In/Clock Out' button*** will be enabled only if the manager's Location Service is enabled (refer [Android Permission](../permission.md#android) and [iOS Permission](../permission.md#ios))
-- Manager can adjust the employee's clocking time and checked ***'Claim OT'*** if needed
+- Manager can adjust the employee's clocking time and checked ***'Claim OT'*** or ***'Claim As Leave'*** if needed
 - Manager are not allowed to clock out on behalf if employee already clocked out on the next day
 
 **View Attendance Log Detail (Right Arrow Icon)**  
@@ -206,7 +218,7 @@ The notification will appear after employee clocked in and has ***'GPS Monitorin
     
     ![reminder1](../../../../static/img/integration/hrms/e-tms/reminder1.png)
 
-2. Remind employee to clock out when he leaves his work location  
+2. Remind employee to clock out it's work end  
     
     ![reminder2](../../../../static/img/integration/hrms/e-tms/reminder2.png)
 

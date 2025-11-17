@@ -14,6 +14,7 @@ Enable **Autostart** for SQL HRMS to ensure E TMS features work accordingly (ref
 
 - **Session Card:** User's work session shift time
   - Icon on the top right corner (green box) indicates the clock method (by GPS or QR) of the day. If there is no icon displayed, it means that user is not required to clock for that day
+	- Tap on the icon to navigate to [Work Session Calendar](#work-session-calendar)
   - It shows user's first Clock In and last Clock Out of the day with an estimated calculation of late in and early out
   - User can tap on the card to direct to User's Attendance Log
   - User can tap on the **_'Clock In' button_** to direct to Clock In / Clock Out page
@@ -201,7 +202,7 @@ Shows the employee's OT entitlement
   - Late In
   - Early Out
   - Absence
-  - Outside
+  - No Out
   - OT
   - Leave
 

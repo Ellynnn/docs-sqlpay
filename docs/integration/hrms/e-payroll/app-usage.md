@@ -29,6 +29,7 @@ User can view his monthly net pay and total net income
 
 - Payslip can be downloaded by tapping on the ***Download icon*** (top right corner)
 - User can tap on a payroll item for more detailed information
+- The ***Date*** column is referring to ***Transaction Date***  
 
 ## EA Form
 
@@ -44,7 +45,7 @@ User can view his monthly net pay and total net income
     ![activity-center](../../../../static/img/integration/hrms/e-payroll/activity-center.png)
 
 - Show employee’s latest payroll
-- User can tap on it will direct user to detailed payroll information
+- User can tap on it and will be directed to detailed payroll information
 
 ## Side Drawer
 
@@ -136,10 +137,11 @@ User can find frequently asked questions to understand better about SQL HRMS fea
     ![faq](../../../../static/img/integration/hrms/e-payroll/faq.png)
 
 #### User Feedback
-
-User can submit feedback on problems that they are facing or suggestions on how we can further improve SQL HRMS  
     
     ![user-feedback](../../../../static/img/integration/hrms/e-payroll/user-feedback.png)
+
+- User can submit feedback on problems that they are facing or suggestions on how we can further improve SQL HRMS  
+- All feedbacks are sent directly to SQL HRMS team  
 
 ## Birthday Calendar
 

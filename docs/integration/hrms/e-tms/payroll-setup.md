@@ -72,7 +72,7 @@ Option 2: Click on ***'P' button*** | Select date
 
 :::info
 1. Only one clock method can be selected. However, if none of the clock method is selected, then the clock in / out button in SQL HRMS app will be disabled and employee does not require to clock in / out.
-2. Clock Method on days without work session, public holiday and rest day is by default **GPS**.
+2. Clock Method on days without work session, public holiday and rest day is by default **GPS**. User may update to their desire clock method in [Maintain Calendar](#maintain-calendar).
 :::
 
 **Step 5:** Select Rules  
@@ -161,11 +161,12 @@ For Custom Rule, may contact SQL Support for customization
 - **Black font:** Work Day with Session  
 - **Grey font:** No schedule is assigned  
 
-**Set Work Session**  
-- User may click on ***'R' button*** or ***'W' button*** | Select date from calendar
+**Set Work Session / Clock Method**  
+- User may click on ***'R' button*** (Rest Day), ***'W' button*** (Work Day) or ***'M' button*** (Clock Method for days without session) | Select date from calendar  
 - ***'C' button*** to clear Work Session / Rest Day
     - Alternatively, user may use ***'Clear All' button*** to clear all Rest Day and Work Session within the date range
-- User cannot assign work sessions or change work sessions on dates before summary last processed date  
+    - Note that clock method will also be reset back to **'GPS'**
+- User cannot assign work sessions, change work sessions or change clock method on dates before summary last processed date  
 - On days without work session assigned, no summary will be processed unless there are clock in / clock out logs on that day  
 
 ### Wizard  
@@ -204,7 +205,15 @@ For Custom Rule, may contact SQL Support for customization
     | By Weeks | Assign to every selected day of every selected weeks of the year |
     | Custom | Assign to selected dates |  
 
-**Step 5:** Process  
+**Step 5:** Next | Select a Clock Method  
+
+    ![calendar-wizard3](../../../../static/img/integration/hrms/e-tms/calendar-wizard3.png)  
+
+- Selected clock method will only be assigned to Rest Day, Public Holiday and Work Day without session on allowable dates within the selected date range  
+
+**Step 6:** Select a date range  
+
+**Step 7:** Process  
 
 :::warning
 User cannot assign work sessions or change work sessions on dates before summary last processed date
@@ -233,7 +242,8 @@ Date From need to be after summary last processed date to future dates (dates be
 **Explanation:** Delete all schedule (Work Session and Rest Day) of Employee 00006 from 20/5/2024 to 31/12/2024  
 
 :::info
-Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to delete)
+1. Date From need to be after summary last processed date to future dates (dates before summary last processed date are not allowed to delete)
+2. When schedule is cleared, clock method will be reset back to **'GPS'**
 :::
 
 ## Maintain Traveller Location

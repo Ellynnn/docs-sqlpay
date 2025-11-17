@@ -44,7 +44,7 @@ User can view his monthly net pay and total net income
     ![activity-center](../../../../static/img/integration/hrms/e-payroll/activity-center.png)
 
 - Show employee’s latest payroll
-- User can tap on it will direct user to detailed payroll information
+- User can tap on it and will be directed to detailed payroll information
 
 ## Side Drawer
 

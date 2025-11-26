@@ -18,7 +18,7 @@ description: An E Leave features in SQL HRMS app guide
 ## Leave Balance
 
 ### Employee
-User can view leave balance of different year by navigating to different year
+User can view leave balance of different year by navigating to different year and tap on each leave balance card to view the leave applied respectively
 
 ![leave-balance-employee](../../../../static/img/integration/hrms/e-leave/leave-balance-employee.png)
 

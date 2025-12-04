@@ -5,7 +5,8 @@ description: An E Claim setup guide in SQL Payroll
 ---
 
 ## Maintain Claim
-**Step 1:** Payroll | Maintenance | Maintain Claim… | Select a Claim/ Create New
+
+**Step 1:** Payroll | Maintenance | Maintain Claim… | Select a Claim/ Create New  
 
 **Step 2:** Set Yearly Limit and Monthly Limit
 Option 1: Maintain Claim 
@@ -20,8 +21,17 @@ Option 2: Maintain Employee | Claim Limit tab
 Payroll / SQL HRMS app will prioritize claim limit set in Maintain Employee over the claim limit in Maintain Claim
 :::
 
+## Notification Settings 
+
+**Step:** Company Profile | E HRMS  
+
+![notification-settings](../../../../static/img/integration/hrms/e-claim/notification-settings.png)
+
+- ***'Send EClaim Email Notification' checkbox***: Checked to allow E HRMS app to send claim email notifications to managers
+
 ## Manager Authority Settings
-**Step:** Maintain Employee | E HRMS tab
+
+**Step:** Maintain Employee | E HRMS  
 
 ![manage-authority-settings](../../../../static/img/integration/hrms/e-claim/manage-authority-settings.png)
 

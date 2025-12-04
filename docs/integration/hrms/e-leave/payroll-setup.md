@@ -6,16 +6,16 @@ description: An E Leave setup guide in SQL Payroll
 
 ## Multi-Level Leave Approval & Notification Settings
 
-**Step:** Company Profile | E HRMS tab
+**Step:** Company Profile | E HRMS  
 
 ![company-profile-hrms-approval-notification](../../../../static/img/integration/hrms/e-leave/company-profile-hrms-approval-notification.png)
 
 - ***'Multi-Level Approval' checkbox***: Checked to enable multi-level approval for leave application in E HRMS app
-- ***'Send E Leave Email Notification' checkbox***: Checked to allow E HRMS app to send leave and claim notifications to managers.
+- ***'Send ELeave Email Notification' checkbox***: Checked to allow E HRMS app to send leave email notifications to managers 
 
 ## Manager Authority Settings
 
-**Step:** Maintain Employee | E HRMS tab
+**Step:** Maintain Employee | E HRMS  
 
 ![manage-authority-settings](../../../../static/img/integration/hrms/e-leave/manage-authority-settings.png)
 

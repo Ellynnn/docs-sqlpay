@@ -52,23 +52,14 @@ If user forget to clock out, the app will reset the time tracking after 10 hours
 
     - If **_'Claim OT' switch_** is turned on - The **'OT Break Time (min)'** will be visible
 
-  ![clock-out2](../../../../static/img/integration/hrms/e-tms/clock-out2.png)
-
-    - When employee tap the ***'Clock Out' button***, a few different dialog may be shown, as explained below
-
-  | **Dialog**                                                                  | **Explanation**                                                                                                                                                                                                      |
-  | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | ![clock-out3](../../../../static/img/integration/hrms/e-tms/clock-out3.png) | If [OT Rules](#work-ot) are fulfilled, an **'Overtime Confirmation'** dialog will be prompt that allows the employee to adjust their OT time and OT break time                                                       |
-  | ![clock-out4](../../../../static/img/integration/hrms/e-tms/clock-out4.png) | If no [OT Rules](#work-ot) is found, an **'Overtime Confirmation'** dialog (with _'No OT entitlement found'_ stated at the bottom) will be prompt that allows the employee to adjust their OT time and OT break time |
-  | ![clock-out5](../../../../static/img/integration/hrms/e-tms/clock-out5.png) | If not within OT Period, employee will be given option to continue Clock Out without claiming OT                                                                                                                     |
-  | ![clock-out6](../../../../static/img/integration/hrms/e-tms/clock-out6.png) | If minimum OT set in [OT Rules](#work-ot) is not fulfilled, employee will be given option to continue Clock Out without claiming OT                                                                                  |
+  	![clock-out2](../../../../static/img/integration/hrms/e-tms/clock-out2.png)
 
     - **_'Claim As Leave' switch_** will only be visible on Rest Day and Public Holiday
     - If **_'Claim As Leave' switch_** is turned on
         - An earn replacement leave application will be posted when employee clocked out
         - When employee tap the **_'Clock Out' button_**, a **'Claim As Leave'** dialog will be prompt that allows the employee to pick the leave type that they want to claim
 
-  ![clock-out7](../../../../static/img/integration/hrms/e-tms/clock-out7.png)
+  ![clock-out3](../../../../static/img/integration/hrms/e-tms/clock-out3.png)
 
 ### By QR
 
@@ -89,7 +80,7 @@ If user forget to clock out, the app will reset the time tracking after 10 hours
 
 **Clock Out:**
 
-    ![clock-out8](../../../../static/img/integration/hrms/e-tms/clock-out8.png)
+    ![clock-out4](../../../../static/img/integration/hrms/e-tms/clock-out4.png)
 
     - If **_'Claim OT' switch_** is turned on, it will go through similar OT validations as _By GPS_ before QR Code is generated
 

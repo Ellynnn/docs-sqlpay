@@ -212,7 +212,7 @@ Batch Leave Approval will undergo the same checkings as Leave Approval and warni
 
 ### Leave Approval Notification
 
-#### Leave Approval Notify Message
+#### Leave Approved
 
 User will receive the following notification once manager approves his leave:
 
@@ -226,15 +226,8 @@ User will receive the following notification once manager approves his leave:
 
 #### Leave Approval Failed
 
-User will receive the following notification if manager fails to approve his leave (exceed year limit):
-
-1. App Notification
-
+User will receive an app notification if manager fails to approve his leave (exceed year limit):
    ![leave-approval-failed-app-noti](../../../../static/img/integration/hrms/e-leave/leave-approval-failed-app-noti.png)
-
-2. Email Notification
-
-   ![leave-approval-failed-email-noti](../../../../static/img/integration/hrms/e-leave/leave-approval-failed-email-noti.png)
 
 #### Leave Rejected
 

@@ -266,47 +266,33 @@ The notification will appear after employee clocked in and has **_'GPS Monitorin
 
 ### Clock On Behalf
 
-- The manager themselves and other managers managing the same employee will receive the following notifications once they clock on behalf for an employee
-
-  - App Notification
-
-        ![clock-on-behalf-notification1](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification1.png)
-
-  - Email Notification
-
-        ![clock-on-behalf-notification2](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification2.png)
+- The manager themselves and other managers managing the same employee will receive an app notification once they clock on behalf for an employee
+  ![clock-on-behalf-notification1](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification1.png)
 
 - The employee will receive the following notifications once their manager clock on behalf for them
 
   - App Notification
 
-        ![clock-on-behalf-notification3](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification3.png)
+        ![clock-on-behalf-notification2](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification2.png)
 
   - Email Notification
 
-        ![clock-on-behalf-notification4](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification4.png)
+        ![clock-on-behalf-notification3](../../../../static/img/integration/hrms/e-tms/clock-on-behalf-notification3.png)
 
 ### Adjusted Attendance Log
 
-- The manager themselves and other managers managing the same employee will receive the following notifications once they adjusted an employee's attendance log
-
-  - App Notification
-
-        ![adjusted-log-notification1](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification1.png)
-
-  - Email Notification
-
-        ![adjusted-log-notification2](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification2.png)
+- The manager themselves and other managers managing the same employee will receive an app notification once they adjusted an employee's attendance log
+  ![adjusted-log-notification1](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification1.png)
 
 - The employee will receive the following notifications once their manager adjusted their attendance log
 
   - App Notification
 
-        ![adjusted-log-notification3](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification3.png)
+        ![adjusted-log-notification2](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification2.png)
 
   - Email Notification
 
-        ![adjusted-log-notification4](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification4.png)
+        ![adjusted-log-notification3](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification3.png)
 
 ### Employee login from a different device
 

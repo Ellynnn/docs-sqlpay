@@ -74,26 +74,15 @@ User can click on the **_'Map' button_** in tab to show the employee's log locat
 
 - Editable columns:
   - Post Date
+  - Remark
+  - Break Time
+  - Claimable
   - Action:
     - Unassigned
     - Overtime: Record will be posted to Pending Overtime
     - Cancelled: Record will be ignored
-- **Red highlight:** Not all the nested records are assigned with an OT code (won't be posted to pending)
-- **Green highlight:** All the nested records are assigned with an OT code
-- **_'Show Log' button_** is to show all employee's attendance logs on that date
-
-### Edit Mode
-
-1. Right-click on the grid, select "Edit"
-
-    ![ot-edit-mode](../../../../static/img/integration/hrms/e-tms/ot-edit-mode.png)
-
-- Editable columns:
-  - Remark
-  - Claimable
-  - Break Time
   - OT Code
-- **_'Save' button_** will enabled once changes are made
+- **_'Show Log' button_** is to show all employee's attendance logs on that date
 
 ## Leave
 

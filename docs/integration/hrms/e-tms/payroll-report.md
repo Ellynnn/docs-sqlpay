@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: Payroll Report
 description: An E TMS report guide in SQL Payroll
 ---
@@ -41,8 +41,8 @@ description: An E TMS report guide in SQL Payroll
     - Employee who are entitled to **Attendance Reward** (set in [Maintain Employee](payroll-setup.md#maintain-employee)) and fulfilled the conditions will be listed
     - Once **'Save'**, the reward will be posted to Pending Allowance
 
-2. Select an Allowance Code and save
-3. Navigate to Payroll > Open Pending Payroll…,click on "Allowance"
+2. Select an Allowance Code and a Deduction Code and save
+3. Navigate to Payroll > Open Pending Payroll…, click on "Allowance" / "Deduction"
 
     ![attendance-reward2](../../../../static/img/integration/hrms/e-tms/attendance-reward2.png)
 

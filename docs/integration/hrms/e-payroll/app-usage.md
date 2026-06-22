@@ -118,6 +118,9 @@ User can switch to different company which are linked to the login email
     ![settings](../../../../static/img/integration/hrms/e-payroll/settings.png)
 
 - **Language:** User can switch to different language based on preferences
+- **Security:** User can set up a payroll PIN to ensure all of their payroll related information won't be accessible if someone else has access to their device
+  - **PIN Timeout:** Determine how often user will need to enter their PIN
+  - If user forgets their PIN, then they can just logout of SQL HRMS to reset their PIN
 - **Total Space Used:** User can press the button at the right to delete cache files created by SQL HRMS
 
 ### Help Center

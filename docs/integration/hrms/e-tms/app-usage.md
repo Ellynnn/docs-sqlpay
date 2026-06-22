@@ -287,8 +287,8 @@ The notification will appear after employee clocked in and has **_'GPS Monitorin
 - The employee will receive an app notification once their manager adjusted their attendance log
   ![adjusted-log-notification2](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification2.png)
 
-### Employee login from a different device
+### Employee Switched Device
 
-- Managers will receive an email notification when his team use a different device to login to the app
-- The purpose is to help manager keep track if there are any employees that might help their friends to clock in/out
+- Managers will receive an email notification when his team members switch to a different device 
+- The purpose is to help manager keep track if there are any employees that might help their friends to clock in / out
   ![different-device-notification](../../../../static/img/integration/hrms/e-tms/different-device-notification.png)

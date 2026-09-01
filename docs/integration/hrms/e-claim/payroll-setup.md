@@ -8,6 +8,7 @@ description: An E Claim setup guide in SQL Payroll
 
 1. Navigate to Payroll > Maintenance > Maintain Claim…, select a Claim or Create New
 2. Set Yearly Limit and Monthly Limit
+3. Set UOM and Rate (for Mileage Claim)
 
     Option 1: Maintain Claim
 
@@ -27,7 +28,7 @@ SQL Payroll/SQL HRMS app will prioritize claim limit set in Maintain Employee ov
 
 ![notification-settings](../../../../static/img/integration/hrms/e-claim/notification-settings.png)
 
-- ***'Send EClaim Email Notification' checkbox***: Checked to allow E HRMS app to send claim email notifications to managers
+- **_'Send EClaim Email Notification' checkbox_**: Checked to allow E HRMS app to send claim email notifications to managers
 
 ## Manager Authority Settings
 

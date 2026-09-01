@@ -22,16 +22,22 @@ Prorated year claim limit will be applied to user whose Join Year = Current Year
 
 1. Draft the claim:
 
-   | Claim               | Description                                                   |
-   | ------------------- | ------------------------------------------------------------- |
-   | **Default Claim**   | Select expense type, claim date, amount and description       |
-   | **Receipt Scan**    | Select attachment of a receipt                                |
-   | **E-Invoice Claim** | Select attachment that includes a **VALID** E-Invoice QR code |
+   | Claim               | Description                                                       |
+   | ------------------- | ----------------------------------------------------------------- |
+   | **Default Claim**   | Select expense type, claim date, amount and description           |
+   | **Mileage**         | Select expense type, claim date, address/distance and description |
+   | **Receipt Scan**    | Select attachment of a receipt                                    |
+   | **E-Invoice Claim** | Select attachment that includes a **VALID** E-Invoice QR code     |
 
    - User can view the MTD limit, YTD limit and claim balance for each selected expenses type
+   - For Mileage Claim,
+      - Only expenses type where its UOM is "KM" can be used to apply Mileage Claim (refer [here](payroll-setup#maintain-claim))
+      - **_'Calculate from Address' switch_**: User can input origin and destination for Mileage Claim and system will calculate the approximate distance between the 2 address (Caluclated distance are not allowed to edit)
+      - **_Amount_** are not allowed to edit as it will be calculate based on the distance and rate  
+      - A map screenshot will be attached if user input origin and destination
    - For Receipt Scan, 
-     - Rescan: Resubmit attachment for reanalyzing if the scan result is incorrect
-     - Refresh Status: Refresh scan status after attachment is uploaded if scanning is still in progress
+     - **_'Rescan' button_**: Resubmit attachment for reanalyzing if the scan result is incorrect
+     - **_'Refresh Status' button_**: Refresh scan status after attachment is uploaded if scanning is still in progress
    - For E-Invoice Claim, post date, ref 1 and ref 2 will be filled in based on the E-Invoice and are not editable
    - User need to allow Camera and Photos (only for iOS device) permission in order to continue the service (refer [Android Permission](../permission.md#android-2) and [iOS Permission](../permission.md#ios-2))
 
@@ -88,19 +94,20 @@ User can view all his claim transactions once enter this page
     - Claim Status
 - Type of claim status:
 
-  | **Icon**                                                                                            | **Claim Status** | **Remark**                                                    |
-  | :-------------------------------------------------------------------------------------------------- | :--------------- | :------------------------------------------------------------ |
-  | ![pending-approval-icon](../../../../static/img/integration/hrms/e-claim/pending-approval-icon.png) | Pending Approval | Status after normal employee applied a claim submission       |
-  | ![approved-icon](../../../../static/img/integration/hrms/e-claim/approved-icon.png)                 | Approved         | Approved by manager from app and not synced to payroll system |
-  | ![approved-sync-icon](../../../../static/img/integration/hrms/e-claim/approved-sync-icon.png)       | Approved (Sync)  | Synced and approved on payroll system                         |
-  | ![rejected-icon](../../../../static/img/integration/hrms/e-claim/rejected-icon.png)                 | Rejected         | Rejected from app / payroll system                            |
-  | ![cancelled-icon](../../../../static/img/integration/hrms/e-claim/cancelled-icon.png)               | Cancelled        | Cancelled by user from app                                    |
+  | **Icon**                                                                                                    | **Claim Status**     | **Remark**                                                                                                                                             |
+  | :---------------------------------------------------------------------------------------------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | ![pending-approval-icon](../../../../static/img/integration/hrms/e-claim/pending-approval-icon.png)         | Pending Approval     | Status after normal employee applied a claim submission                                                                                                |
+  | ![pending-verification-icon](../../../../static/img/integration/hrms/e-claim/pending-verification-icon.png) | Pending Verification | Status after normal employee applied a claim submission (with [Multi-Level Approval](payroll-setup#multi-level-leave-approval--notification-settings)) |
+  | ![approved-icon](../../../../static/img/integration/hrms/e-claim/approved-icon.png)                         | Approved             | Approved by manager from app and not synced to payroll system                                                                                          |
+  | ![approved-sync-icon](../../../../static/img/integration/hrms/e-claim/approved-sync-icon.png)               | Approved (Sync)      | Synced and approved on payroll system                                                                                                                  |
+  | ![rejected-icon](../../../../static/img/integration/hrms/e-claim/rejected-icon.png)                         | Rejected             | Rejected from app / payroll system                                                                                                                     |
+  | ![cancelled-icon](../../../../static/img/integration/hrms/e-claim/cancelled-icon.png)                       | Cancelled            | Cancelled by user from app                                                                                                                             |
 
 ## Claim Transaction Detail
 
 ![claim-detail](../../../../static/img/integration/hrms/e-claim/claim-detail.png)
 
-- User are allowed to edit the claim transaction details or cancel the claim on **Pending Approval** claims.
+- User are allowed to edit the claim transaction details or cancel the claim on **Approved / Pending Approval Pending Verification** claims.
 - **_'View Change Log' button_**: View change log of the claim
 
 ## Team Claim (Manager only)
@@ -108,7 +115,7 @@ User can view all his claim transactions once enter this page
 Manager Types: (refer [Manager Authority Settings](payroll-setup.md#manager-authority-settings))
 
 1. **Approval Manager:** Can approve employee claim
-2. **Verify Manager:** Cannot approve employee claim
+2. **Verify Manager:** Can verify employee claim (required Approval Manager to approve a claim submission)
 
 ![team-claim](../../../../static/img/integration/hrms/e-claim/team-claim.png)
 
@@ -129,17 +136,30 @@ Manager Types: (refer [Manager Authority Settings](payroll-setup.md#manager-auth
 
 ![claim-approval](../../../../static/img/integration/hrms/e-claim/claim-approval.png)
 
-- Managers can apply different actions on his team’s claim transaction based on the claim status
-
-  | **Claim Status** | **Allowed Actions**    |
-  | :--------------- | :--------------------- |
-  | Pending Approval | Approve, Reject        |
-  | Approved         | Undo Approved, Reject  |
-  | Approved (Sync)  | -                      |
-  | Rejected         | Approve, Undo Rejected |
-  | Cancelled        | -                      |
-
 - **_'View Change Log' button_**: View change log of the claim
+- Managers can apply different actions on his team’s claim transaction based on the claim status and his authority
+
+- Actions that can be done by **Approval Manager**: 
+
+  | **Claim Status**     | **Allowed Actions**    |
+  | :--------------------| :--------------------- |
+  | Pending Verification | Approve, Reject        |
+  | Pending Approval     | Approve, Reject        |
+  | Approved             | Undo Approved, Reject  |
+  | Approved (Sync)      | -                      |
+  | Rejected             | Approve, Undo Rejected |
+  | Cancelled            | -                      |
+
+- Actions that can be done by **Verify Manager**: 
+
+  | **Claim Status**     | **Allowed Actions**    |
+  | :--------------------| :--------------------- |
+  | Pending Verification | Verify, Reject         |
+  | Pending Approval     | Undo Verify, Reject    |
+  | Approved             | Reject                 |
+  | Approved (Sync)      | -                      |
+  | Rejected             | Verify, Undo Rejected  |
+  | Cancelled            | -                      |
 
 #### Claim Approval Warning Dialog Box
 

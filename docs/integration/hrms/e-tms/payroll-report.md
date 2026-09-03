@@ -23,11 +23,11 @@ description: An E TMS report guide in SQL Payroll
 
 ## Time Attendance Summary
 
-1. Mavogate tp Time Attendance > Print Time Attendance Summary…
+1. Navigate to Time Attendance > Print Time Attendance Summary…
 
     ![time-attendance-summary](../../../../static/img/integration/hrms/e-tms/time-attendance-summary.png)
 
-    - Shows all log pairs processed in Sync Cloud
+    - Shows all dates of employees using Time Attendance
     - **_'*' symbol_**: Adjusted log
     - **_'(by mgr)' label_**: Log is clocked by manager through SQL HRMS app
     - **_'-' symbol_**: Employee do not have any clock in/clock out records for that session
@@ -41,8 +41,8 @@ description: An E TMS report guide in SQL Payroll
     - Employee who are entitled to **Attendance Reward** (set in [Maintain Employee](payroll-setup.md#maintain-employee)) and fulfilled the conditions will be listed
     - Once **'Save'**, the reward will be posted to Pending Allowance
 
-2. Select an Allowance Code and a Deduction Code and save
-3. Navigate to Payroll > Open Pending Payroll…, click on "Allowance" / "Deduction"
+2. Select Allowance, Deduction and Wages Code and Save
+3. Navigate to Payroll > Open Pending Payroll…, click on "Allowance" / "Deduction" / "Wages"
 
     ![attendance-reward2](../../../../static/img/integration/hrms/e-tms/attendance-reward2.png)
 

@@ -43,7 +43,7 @@ Enable **Autostart** for SQL HRMS to ensure E TMS features work accordingly (ref
     - User who is a traveller will show a **'Traveller'** with green check
 
 :::info
-If user forget to clock out, the app will reset the time tracking after 10 hours (600 mins) after Session Work End time and last Clock In time
+If user forget to clock out, the app will reset the time tracking after 14 hours (840 mins) after Session Work End time and last Clock In time
     ![clock-in2](../../../../static/img/integration/hrms/e-tms/clock-in2.png)
 
 :::
@@ -144,8 +144,6 @@ User can view employee's team member's work session and work session of the empl
 
 - **_'Timeline' button_** will direct to Attendance Timeline to view user's locations (refer [Timeline](#timeline) for more details)
 
-  ![processed-log3](../../../../static/img/integration/hrms/e-tms/processed-log3.png)
-
 ### Unprocessed Log
 
     ![unprocessed-log](../../../../static/img/integration/hrms/e-tms/unprocessed-log.png)
@@ -159,6 +157,7 @@ User can view employee's team member's work session and work session of the empl
 
 - **Employee List** will only be visible to managers, employees will be directed into their own timeline
 - Timeline plots the user's clock in, clock out and status update locations on a map
+- The address shown is just an estimation and may not always be 100% accurate
 - User can view the remark and attachments of each log if available
   - Paper Clip icon will only appear if there's attachment for that log
   - If there are more than one attachment attached, tapping on the Paper Clip icon a pop up will appear with a list of attachments
@@ -287,8 +286,11 @@ The notification will appear after employee clocked in and has **_'GPS Monitorin
 - The employee will receive an app notification once their manager adjusted their attendance log
   ![adjusted-log-notification2](../../../../static/img/integration/hrms/e-tms/adjusted-log-notification2.png)
 
-### Employee login from a different device
+### Employee Switched Device
 
-- Managers will receive an email notification when his team use a different device to login to the app
-- The purpose is to help manager keep track if there are any employees that might help their friends to clock in/out
-  ![different-device-notification](../../../../static/img/integration/hrms/e-tms/different-device-notification.png)
+- Managers will receive both email and app notification when his team members switch to a different device 
+- The purpose is to help manager keep track if there are any employees that might help their friends to clock in / out
+  ![different-device-notification1](../../../../static/img/integration/hrms/e-tms/different-device-notification1.png)
+  - Tapping on the notification will show you more details (similar to the email content)
+    ![different-device-notification2](../../../../static/img/integration/hrms/e-tms/different-device-notification2.png)
+

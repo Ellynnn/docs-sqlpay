@@ -18,7 +18,7 @@ Make sure you are logging into an ADMIN user before proceed with the steps below
 2. Switch on Drive.
    ![sql-drive2](../../../static/img/integration/hrms/payroll-setup/sql-drive2.png)
 
-3. Click on "Log in" > Log in with Google. Enter your Gmail account + password and press on "Grant access".
+3. Click on "Log in" > Log in with Google or Microsoft. Enter your Gmail or Microsoft account + password and press on "Grant access".
    ![sql-drive3](../../../static/img/integration/hrms/payroll-setup/sql-drive3.png)
 
 4. Save.
